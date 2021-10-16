@@ -4,9 +4,9 @@ const typeDefs = require('./typeDefs');
 const resolvers = require('./resolvers');
 const ProjectInvAPI = require('./dataSources/projectinv_api');
 
-import { ApolloServerPluginLandingPageLocalDefault,
+const { ApolloServerPluginLandingPageLocalDefault,
   ApolloServerPluginLandingPageProductionDefault
-} from "apollo-server-core";
+} = require("apollo-server-core");
 
 
 const server = new ApolloServer({
